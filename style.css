@@ -1,0 +1,149 @@
+
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #383838;
+}
+.container{
+    max-width: 1146px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+header{
+    /* background-image: url(/image/header-background.png); */
+    background: rgb(200, 255, 240);
+    padding: 13.5px 0;
+    
+}
+.logo{
+    width: 150px;
+    height: 35px;
+}
+.header-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contacts a{
+    color: rgb(120, 0, 150);
+    text-decoration: none;
+    font-size: 12px;
+    margin-right: 25px;
+    display: inline-flex;
+    align-items: center;
+}
+.contacts{
+    display:inherit;
+}
+.contacts a img{
+    margin-right: 5px;
+    height: 17px;
+    width: 17px;
+}
+.btn{
+    background:rgb(10, 0, 60);
+    color: #fff;
+    font-size: 12px;
+    border: none;
+    width: 160px;
+    padding: 13.2px;
+    border-radius: 20px;
+}
+.header-btn{
+    width: 180px;
+}
+
+.main-info{
+    height: 400px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('image/cupcakes-circle.png')  no-repeat right bottom;
+}
+.main-info h1{
+    font-size: 36px;
+    color: rgb(10, 0, 60);
+    margin: 0;
+}
+.main-info p{
+    font-size: 18px;
+    margin-top: 15px;
+}
+.buttons{
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+.bg{
+    background: rgb(180, 255, 250);
+}
+.range-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 70px 0 60px;
+}
+.range-info .card{
+    width: 470px;
+}
+footer{
+    background: #383838;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    height: 40px;
+    font-size: 12px;
+}
+footer p{
+    margin: 0;
+}
+@media (max-width:992px) {
+    header{
+        height: 150px;
+        padding: 20px;
+    }
+    .logo{
+        margin-bottom: 20px;
+    }
+    .header-info{
+        flex-direction: column;
+    }
+}
+@media (max-width:767px){
+    header{
+        padding: 20px;
+        height: 210px;
+    }
+    .contacts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contacts a{
+        margin-bottom: 5px;
+    }
+    .header-btn{
+        margin-top: 12px;
+    }
+    .main-info h1{
+        font-size: 25px;
+        text-align: center;
+    }
+    .main-info p{
+        text-align: center;
+    }
+    .buttons{
+        width: auto;
+        flex-direction: column;
+    }
+    .buttons button{
+        margin-bottom: 12px;
+    }
+    .range-info{
+        padding: 20px 10px;
+    }
+}
