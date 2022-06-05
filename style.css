@@ -14,10 +14,11 @@ body {
 }
 header{
     /* background-image: url(/image/header-background.png); */
-    background: rgb(200, 255, 240);
+    background: #c8fff0;
     padding: 13.5px 0;
     
 }
+
 .logo{
     width: 150px;
     height: 35px;
@@ -62,7 +63,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('image/cupcakes-circle.png')  no-repeat right bottom;
+    background: url('cupcakes-circle.png')  no-repeat right bottom;
 }
 .main-info h1{
     font-size: 36px;
